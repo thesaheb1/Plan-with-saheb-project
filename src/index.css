@@ -1,0 +1,152 @@
+/* write your css here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Mono", monospace;
+}
+body{
+    background: #B73E3E;
+}
+/* empty container */
+.empty-tour-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.no-tour{
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+}
+
+.refresh-btn{
+    all: unset;
+    font-size: larger;
+    margin: 5px;
+    border: 2px solid aqua;
+    padding: 0.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    color: aqua;
+    background-color: rgba(0,0,0,0.2);
+}
+
+/* heading */
+.head-title {
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 1rem 5rem;
+    border: 20px dashed #820000;
+    border-radius: 50px;
+    color: white;
+}
+/* container */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 2rem;;
+    margin: 2rem auto;
+    flex-wrap: wrap;
+    padding: 0 6%;
+}
+/* card */
+.card-content {
+    width: 100%;
+    max-width: 400px;
+    background: #EDDBC0;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    filter: drop-shadow(0 0 0.75rem rgba(0,0,0,0.5));
+}
+
+.info-content {
+    margin-top: 1rem;
+    width: 90%;
+}
+
+.image {
+    width: 100%;
+    max-width: 380px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.price {
+    color: #1faa59;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.city {
+    color: black;
+    font-size: 1.8rem;
+    font-weight: bold;
+    
+}
+
+.description {
+    color: black;
+    font-size: 1rem;
+    text-align: justify;
+    word-spacing: -5px;
+}
+.read-more{
+    font-size: medium;
+    color: blue;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn {
+    all: unset;
+    margin-top: 1rem;
+    width: 80%;
+    padding: 0.6rem 0;
+    border: 2px solid #B73E3E;
+    color: black;
+    background: #DBC8AC;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn:hover{
+    background: #DD5353;
+    color: white;
+    transition: all;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+}
+
+@media screen and (max-width:480px) {
+    .head-title {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: -1rem;
+        padding: 1rem 1rem;
+        border: 10px dashed #820000;
+        border-radius: 20px;
+        color: white;
+    }
+    .btn{
+        background: #DD5353;
+        color: white;
+       }
+}
